@@ -1,0 +1,13 @@
+{
+  "name": "lab-tkg-aws-installer",
+  "version": "1.0.0",
+  "description": "Installer for TKG on AWS.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduk8s-tests/lab-tkg-aws-installer.git"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "vmw-cli": "^2.0.15"
+  }
+}
