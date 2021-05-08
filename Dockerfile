@@ -1,4 +1,4 @@
-FROM quay.io/eduk8s/base-environment:210507.100642.1a3e65b as tanzu-tools
+FROM quay.io/eduk8s/base-environment:210508.015017.4546935 as tanzu-tools
 
 USER root
 
@@ -33,7 +33,7 @@ RUN tanzu plugin clean && \
 
 RUN rm -rf cli
 
-FROM quay.io/eduk8s/base-environment:210507.100642.1a3e65b
+FROM quay.io/eduk8s/base-environment:210508.015017.4546935
 
 COPY --from=tanzu-tools --chown=1001:0 /opt/tanzu /opt/tanzu
 COPY --from=tanzu-tools --chown=1001:0 /home/eduk8s /home/eduk8s
